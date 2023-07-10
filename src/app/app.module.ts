@@ -8,12 +8,14 @@ import { C2Component } from './c2/c2.component';
 import { C3Component } from './c3/c3.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { C4ParametroComponent } from './c4-parametro/c4-parametro.component';
 @NgModule({
   declarations: [
     AppComponent,
     C1Component,
     C2Component,
-    C3Component
+    C3Component,
+    C4ParametroComponent
   ],
   imports: [
     BrowserModule,
