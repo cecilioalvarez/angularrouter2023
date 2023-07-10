@@ -11,5 +11,12 @@
   <a routerLink="/c3">c3</a>
 </p>
 </div>
+<div>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="c1" routerLink="/c1">c1</mat-button-toggle>
+    <mat-button-toggle value="italic" routerLink="/c2">c2</mat-button-toggle>
+    <mat-button-toggle value="underline" routerLink="/c3">c3</mat-button-toggle>
+  </mat-button-toggle-group>
 
+</div>
 <router-outlet></router-outlet>
