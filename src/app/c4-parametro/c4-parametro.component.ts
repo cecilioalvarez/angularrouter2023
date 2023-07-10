@@ -11,7 +11,10 @@ export class C4ParametroComponent {
   //acceso de los parametros que tenemos que vienen de otra parte
 
   constructor(activeRoute:ActivatedRoute){
+   
+   activeRoute.paramMap.subscribe(params=> {
 
-    console.log(activeRoute.snapshot.params["numero"])
+        console.log(params.get("numero"));
+    });
   }
 }
