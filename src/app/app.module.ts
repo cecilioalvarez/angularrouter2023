@@ -9,19 +9,27 @@ import { C3Component } from './c3/c3.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { C4ParametroComponent } from './c4-parametro/c4-parametro.component';
+import { C5Component } from './c5/c5.component';
+import { C6selectComponent } from './c6select/c6select.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
     C1Component,
     C2Component,
     C3Component,
-    C4ParametroComponent
+    C4ParametroComponent,
+    C5Component,
+    C6selectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
