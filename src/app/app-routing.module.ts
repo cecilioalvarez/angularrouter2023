@@ -6,6 +6,7 @@ import { C3Component } from './c3/c3.component';
 import { C4ParametroComponent } from './c4-parametro/c4-parametro.component';
 import { C5Component } from './c5/c5.component';
 import { C6selectComponent } from './c6select/c6select.component';
+import { C7FacturaComponent } from './c7-factura/c7-factura.component';
 
 const routes: Routes = [
 {path:"", redirectTo:"/c6",pathMatch:"full"},
@@ -15,6 +16,7 @@ const routes: Routes = [
 {path:"c4/:numero",component:C4ParametroComponent, pathMatch:"full"},
 {path:"c5/:numero/otro/:otro",component:C5Component, pathMatch:"full"},
 {path:"c6",component:C6selectComponent, pathMatch:"full"},
+{path:"c7Factura/:numero",component:C7FacturaComponent, pathMatch:"full"},
 
 
 

@@ -13,6 +13,10 @@ import { C5Component } from './c5/c5.component';
 import { C6selectComponent } from './c6select/c6select.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+import { C7FacturaComponent } from './c7-factura/c7-factura.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,8 @@ import { MatSelectModule } from '@angular/material/select';
     C3Component,
     C4ParametroComponent,
     C5Component,
-    C6selectComponent
+    C6selectComponent,
+    C7FacturaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,10 @@ import { MatSelectModule } from '@angular/material/select';
     BrowserAnimationsModule,
     MatButtonToggleModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule,
+    MatDividerModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,4 +10,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 export class C6selectComponent {
 
   listaNumeros:Number[]=[1,2,3,4,5];
+  numeroSeleccionado?:string;
+
+  mostrarMensaje() {
+
+    alert("hola");
+  }
 }

@@ -1,8 +1,13 @@
 <mat-form-field>
     <mat-label>Lista de Facturas</mat-label>
-    <mat-select>
+    <mat-select [(value)]="numeroSeleccionado">
       <mat-option *ngFor="let numero of listaNumeros" [value]="numero">
         {{numero}}
       </mat-option>
     </mat-select>
   </mat-form-field>
+  {{numeroSeleccionado}}
+  <mat-divider></mat-divider>
+  <button mat-stroked-button color="primary" (click)="mostrarMensaje()">mostrar factura</button>
+  <!-- pasamos parametros variables-->
+  <a [routerLink]="['/c7Factura',numeroSeleccionado]">mostrar Factura</a>
